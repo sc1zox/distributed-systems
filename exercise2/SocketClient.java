@@ -8,7 +8,7 @@ import java.net.Socket;
 
 public class SocketClient {
     public static void main(String[] args) throws IOException {
-        String host = args.length > 0 ? args[0] : "stud.fh-wedel.de";
+        String host = args.length > 0 ? args[0] : "fh-wedel.de";
         int port = args.length > 1 ? Integer.parseInt(args[1]) : 80;
         String path = args.length > 2 ? args[2] : "/index.html";
 
