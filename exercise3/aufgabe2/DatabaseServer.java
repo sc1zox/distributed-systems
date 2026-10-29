@@ -53,14 +53,19 @@ public class DatabaseServer {
                 if (req.hasOp()) {
                     switch (op) {
                         case OPERATION_GET_RECORD: {
-                            int id;
                             if (req.hasGetRecordArgs()) {
-                                id = req.getGetRecordArgs().getIndex();
+                                int id = req.getGetRecordArgs().getIndex();
                                 String content = records.get(id);
 
-                                if (content == null) break;
-
-                                GetRecordRes res = GetRecordRes.newBuilder().setIndex(id).setContent(content).setSuccess(true).build();
+                                GetRecordRes.Builder res = GetRecordRes.newBuilder().setIndex(id);
+                                if (content == null) {
+                                    res.setSuccess(false);
+                                } else {
+                                    res.setContent(content).setSuccess(true);
+                                }
+                                responseBuilder.setGetRecordRes(res);
+                            } else {
+                                GetRecordRes res = GetRecordRes.newBuilder().setSuccess(false).build();
                                 responseBuilder.setGetRecordRes(res);
                             }
                         }
