@@ -51,8 +51,8 @@ public class DatabaseClient {
                 .setGetRecordArgs(GetRecordArgs.newBuilder().setIndex(index))
                 .build();
         RpcResponse res = call(req, in, out);
-        // the server sends an empty response if the index does not exist
-        if (res.hasGetRecordRes()) {
+        // success is false if the index does not exist
+        if (res.hasGetRecordRes() && res.getGetRecordRes().getSuccess()) {
             System.out.println("getRecord(" + index + "): " + res.getGetRecordRes().getContent());
         } else {
             System.out.println("getRecord(" + index + "): not found");
