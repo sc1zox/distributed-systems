@@ -8,8 +8,8 @@ import java.net.*;
 
 public class UrlProxyClient {
     public static void main(String[] args) throws IOException {
-        String address = args.length > 0 ? args[0] : "http://stud.fh-wedel.de/index.html";
-        String proxyHost = args.length > 1 ? args[1] : "proxy.example.org";
+        String address = args.length > 0 ? args[0] : "http://fh-wedel.de/index.html";
+        String proxyHost = args.length > 1 ? args[1] : "localhost";
         int proxyPort = args.length > 2 ? Integer.parseInt(args[2]) : 3128;
 
         URL url = URI.create(address).toURL();
