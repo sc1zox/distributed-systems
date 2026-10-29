@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+option java_package = "exercise3.aufgabe2";
+option java_multiple_files = true;
+
+enum Operation {
+  OPERATION_GET_RECORD = 0;
+  OPERATION_ADD_RECORD = 1;
+  OPERATION_GET_SIZE = 2;
+}
+
+message GetRecordArgs {
+  int32 index = 1;
+}
+
+message GetRecordRes {
+  int32 index = 1;
+  bool success = 2;
+  string content = 3;
+}
+
+message AddRecordArgs {
+  int32 index = 1;
+  string content = 2;
+}
+
+message AddRecordRes {
+  bool success = 1;
+}
+
+message GetSizeRes {
+  int64 size = 1;
+}
+
+message RpcRequest {
+  optional Operation op = 1; // optional um hasOp() nutzen zu können um zu prüfen dass es nicht auf default zurück fällt
+  oneof args {
+    GetRecordArgs get_record_args = 2;
+    AddRecordArgs add_record_args = 3;
+  }
+}
+
+message RpcResponse {
+  oneof res {
+    GetRecordRes get_record_res = 2;
+    AddRecordRes add_record_res = 3;
+    GetSizeRes get_size_res = 4;
+  }
+}

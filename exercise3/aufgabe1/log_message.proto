@@ -1,0 +1,23 @@
+syntax="proto3";
+option java_package = "exercise3.aufgabe1";
+option java_multiple_files = true;
+
+enum Severity {
+  DEBUG = 0;
+  INFO = 1;
+  WARN = 2;
+  ERROR = 3;
+  FATAL = 4;
+}
+
+message Person {
+  string name = 1;
+  string ort = 2;
+}
+
+message LogMessage {
+  int64 created_at = 1; //Unix timestamp in ms
+  Severity severity = 2;
+  string message = 3;
+  optional Person person = 4;
+}
