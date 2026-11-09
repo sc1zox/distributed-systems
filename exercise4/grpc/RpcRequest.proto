@@ -1,0 +1,24 @@
+syntax = "proto2";
+option java_package = "grpc.rpc";
+option java_multiple_files = true;
+
+message GetRecordArgs {
+    required int32 index = 1;
+}
+
+message AddRecordArgs {
+    required int32 index = 1;
+    required string record = 2;
+}
+
+message GetSizeArgs {}
+
+message GetRecordResult { required string record = 1; }
+message AddRecordResult { required int32  index  = 1; }
+message GetSizeResult   { required int32  size   = 1; }
+
+service RecordService {
+    rpc getRecord (GetRecordArgs) returns (GetRecordResult) {}
+    rpc addRecord (AddRecordArgs) returns (AddRecordResult) {}
+    rpc getSize (GetSizeArgs) returns (GetSizeResult) {}
+}
