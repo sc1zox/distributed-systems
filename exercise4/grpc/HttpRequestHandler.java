@@ -56,6 +56,8 @@ public class HttpRequestHandler extends RecordServiceGrpc.RecordServiceImplBase 
             responseObserver.onError(Status.INVALID_ARGUMENT
                     .withDescription("Index must not be negative: " + index)
                     .asRuntimeException());
+            // the call is finished here, everything below would close it a second time
+            return;
         }
 
         records.put(index, request.getRecord());
