@@ -1,0 +1,36 @@
+syntax = "proto2";
+option java_package = "pt2.rpc";
+option java_multiple_files = true;
+
+message GetRecordArgs {
+    required int32 index = 1;
+}
+
+message AddRecordArgs {
+    required int32 index = 1;
+    required string record = 2;
+}
+
+message GetSizeArgs {}
+
+message RpcRequest {
+    oneof args {
+        GetRecordArgs get_record = 1;
+        AddRecordArgs add_record = 2;
+        GetSizeArgs   get_size   = 3;
+    } 
+}
+
+message GetRecordResult { required string record = 1; }
+message AddRecordResult { required int32  index  = 1; }
+message GetSizeResult   { required int32  size   = 1; }
+message Error           { required string reason = 1; }
+
+message RpcResponse {
+    oneof result {
+        GetRecordResult get_record = 1;
+        AddRecordResult add_record = 2;
+        GetSizeResult   get_size   = 3;
+        Error           error      = 4;
+    }
+}
