@@ -68,6 +68,17 @@ dist/
 
 # VS Code
 .vscode/
+
+# Heruntergeladene Toolchain, jederzeit nachladbar (siehe exercise4/grpc/README.md)
+# *.jar deckt lib/ schon ab, das Codegen-Plugin in tools/ aber nicht
+/tools/
+*.exe
+
+# Temporaeres Ausgabeverzeichnis von exercise4/grpc/generate.ps1
+.gen/
+
+# Vom pt1-Handler geschriebene Logdatei
+log.txt
 # Compiled class file
 *.class
 
