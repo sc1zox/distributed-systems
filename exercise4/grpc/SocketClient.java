@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
+import io.grpc.StatusRuntimeException;
 import grpc.rpc.AddRecordArgs;
 import grpc.rpc.GetRecordArgs;
 import grpc.rpc.GetSizeArgs;
@@ -49,8 +50,12 @@ public class SocketClient {
             for (int index : new int[] { 4103, 4107 }) {
                 grpc.rpc.GetRecordArgs getRecordArg = GetRecordArgs.newBuilder().setIndex(index)
                         .build();
-                grpc.rpc.GetRecordResult result = stub.getRecord(getRecordArg);
-                System.out.println(result.toString());
+                try {
+                    grpc.rpc.GetRecordResult result = stub.getRecord(getRecordArg);
+                    System.out.println(result.toString());
+                } catch (StatusRuntimeException e) {
+                    System.out.println(e.getStatus().getCode());
+                }
             }
 
             // Get Size Query
