@@ -27,15 +27,16 @@ public class DatabaseServer {
     public static void main(String[] args) throws IOException {
         int port = args.length > 0 ? Integer.parseInt(args[0]) : 7001;
 
-        ServerSocket serverSocket = new ServerSocket(port);
-        System.out.println("Database server started on port " + port);
+        try (ServerSocket serverSocket = new ServerSocket(port)) {
+            System.out.println("Database server started on port " + port);
 
-        while (true) {
-            Socket socket = serverSocket.accept();
-            System.out.println("New connection from: " + socket.getInetAddress());
+            while (true) {
+                Socket socket = serverSocket.accept();
+                System.out.println("New connection from: " + socket.getInetAddress());
 
-            // one new thread for each client
-            new Thread(() -> handleClient(socket)).start();
+                // one new thread for each client
+                new Thread(() -> handleClient(socket)).start();
+            }
         }
     }
 
