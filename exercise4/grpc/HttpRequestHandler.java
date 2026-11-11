@@ -1,4 +1,4 @@
-package grpc;
+package exercise4.grpc;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -6,13 +6,13 @@ import java.util.concurrent.ConcurrentHashMap;
 import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
 
-import grpc.rpc.AddRecordArgs;
-import grpc.rpc.AddRecordResult;
-import grpc.rpc.GetRecordArgs;
-import grpc.rpc.GetRecordResult;
-import grpc.rpc.GetSizeArgs;
-import grpc.rpc.GetSizeResult;
-import grpc.rpc.RecordServiceGrpc;
+import exercise4.grpc.rpc.AddRecordArgs;
+import exercise4.grpc.rpc.AddRecordResult;
+import exercise4.grpc.rpc.GetRecordArgs;
+import exercise4.grpc.rpc.GetRecordResult;
+import exercise4.grpc.rpc.GetSizeArgs;
+import exercise4.grpc.rpc.GetSizeResult;
+import exercise4.grpc.rpc.RecordServiceGrpc;
 
 /*
  * The service implementation. gRPC reads the request, decodes it and calls the method

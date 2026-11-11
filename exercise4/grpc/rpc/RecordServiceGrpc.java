@@ -1,4 +1,4 @@
-package grpc.rpc;
+package exercise4.grpc.rpc;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -12,29 +12,29 @@ public final class RecordServiceGrpc {
   public static final java.lang.String SERVICE_NAME = "RecordService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<grpc.rpc.GetRecordArgs,
-      grpc.rpc.GetRecordResult> getGetRecordMethod;
+  private static volatile io.grpc.MethodDescriptor<exercise4.grpc.rpc.GetRecordArgs,
+      exercise4.grpc.rpc.GetRecordResult> getGetRecordMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "getRecord",
-      requestType = grpc.rpc.GetRecordArgs.class,
-      responseType = grpc.rpc.GetRecordResult.class,
+      requestType = exercise4.grpc.rpc.GetRecordArgs.class,
+      responseType = exercise4.grpc.rpc.GetRecordResult.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<grpc.rpc.GetRecordArgs,
-      grpc.rpc.GetRecordResult> getGetRecordMethod() {
-    io.grpc.MethodDescriptor<grpc.rpc.GetRecordArgs, grpc.rpc.GetRecordResult> getGetRecordMethod;
+  public static io.grpc.MethodDescriptor<exercise4.grpc.rpc.GetRecordArgs,
+      exercise4.grpc.rpc.GetRecordResult> getGetRecordMethod() {
+    io.grpc.MethodDescriptor<exercise4.grpc.rpc.GetRecordArgs, exercise4.grpc.rpc.GetRecordResult> getGetRecordMethod;
     if ((getGetRecordMethod = RecordServiceGrpc.getGetRecordMethod) == null) {
       synchronized (RecordServiceGrpc.class) {
         if ((getGetRecordMethod = RecordServiceGrpc.getGetRecordMethod) == null) {
           RecordServiceGrpc.getGetRecordMethod = getGetRecordMethod =
-              io.grpc.MethodDescriptor.<grpc.rpc.GetRecordArgs, grpc.rpc.GetRecordResult>newBuilder()
+              io.grpc.MethodDescriptor.<exercise4.grpc.rpc.GetRecordArgs, exercise4.grpc.rpc.GetRecordResult>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "getRecord"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.rpc.GetRecordArgs.getDefaultInstance()))
+                  exercise4.grpc.rpc.GetRecordArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.rpc.GetRecordResult.getDefaultInstance()))
+                  exercise4.grpc.rpc.GetRecordResult.getDefaultInstance()))
               .setSchemaDescriptor(new RecordServiceMethodDescriptorSupplier("getRecord"))
               .build();
         }
@@ -43,29 +43,29 @@ public final class RecordServiceGrpc {
     return getGetRecordMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<grpc.rpc.AddRecordArgs,
-      grpc.rpc.AddRecordResult> getAddRecordMethod;
+  private static volatile io.grpc.MethodDescriptor<exercise4.grpc.rpc.AddRecordArgs,
+      exercise4.grpc.rpc.AddRecordResult> getAddRecordMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "addRecord",
-      requestType = grpc.rpc.AddRecordArgs.class,
-      responseType = grpc.rpc.AddRecordResult.class,
+      requestType = exercise4.grpc.rpc.AddRecordArgs.class,
+      responseType = exercise4.grpc.rpc.AddRecordResult.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<grpc.rpc.AddRecordArgs,
-      grpc.rpc.AddRecordResult> getAddRecordMethod() {
-    io.grpc.MethodDescriptor<grpc.rpc.AddRecordArgs, grpc.rpc.AddRecordResult> getAddRecordMethod;
+  public static io.grpc.MethodDescriptor<exercise4.grpc.rpc.AddRecordArgs,
+      exercise4.grpc.rpc.AddRecordResult> getAddRecordMethod() {
+    io.grpc.MethodDescriptor<exercise4.grpc.rpc.AddRecordArgs, exercise4.grpc.rpc.AddRecordResult> getAddRecordMethod;
     if ((getAddRecordMethod = RecordServiceGrpc.getAddRecordMethod) == null) {
       synchronized (RecordServiceGrpc.class) {
         if ((getAddRecordMethod = RecordServiceGrpc.getAddRecordMethod) == null) {
           RecordServiceGrpc.getAddRecordMethod = getAddRecordMethod =
-              io.grpc.MethodDescriptor.<grpc.rpc.AddRecordArgs, grpc.rpc.AddRecordResult>newBuilder()
+              io.grpc.MethodDescriptor.<exercise4.grpc.rpc.AddRecordArgs, exercise4.grpc.rpc.AddRecordResult>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "addRecord"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.rpc.AddRecordArgs.getDefaultInstance()))
+                  exercise4.grpc.rpc.AddRecordArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.rpc.AddRecordResult.getDefaultInstance()))
+                  exercise4.grpc.rpc.AddRecordResult.getDefaultInstance()))
               .setSchemaDescriptor(new RecordServiceMethodDescriptorSupplier("addRecord"))
               .build();
         }
@@ -74,29 +74,29 @@ public final class RecordServiceGrpc {
     return getAddRecordMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<grpc.rpc.GetSizeArgs,
-      grpc.rpc.GetSizeResult> getGetSizeMethod;
+  private static volatile io.grpc.MethodDescriptor<exercise4.grpc.rpc.GetSizeArgs,
+      exercise4.grpc.rpc.GetSizeResult> getGetSizeMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "getSize",
-      requestType = grpc.rpc.GetSizeArgs.class,
-      responseType = grpc.rpc.GetSizeResult.class,
+      requestType = exercise4.grpc.rpc.GetSizeArgs.class,
+      responseType = exercise4.grpc.rpc.GetSizeResult.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<grpc.rpc.GetSizeArgs,
-      grpc.rpc.GetSizeResult> getGetSizeMethod() {
-    io.grpc.MethodDescriptor<grpc.rpc.GetSizeArgs, grpc.rpc.GetSizeResult> getGetSizeMethod;
+  public static io.grpc.MethodDescriptor<exercise4.grpc.rpc.GetSizeArgs,
+      exercise4.grpc.rpc.GetSizeResult> getGetSizeMethod() {
+    io.grpc.MethodDescriptor<exercise4.grpc.rpc.GetSizeArgs, exercise4.grpc.rpc.GetSizeResult> getGetSizeMethod;
     if ((getGetSizeMethod = RecordServiceGrpc.getGetSizeMethod) == null) {
       synchronized (RecordServiceGrpc.class) {
         if ((getGetSizeMethod = RecordServiceGrpc.getGetSizeMethod) == null) {
           RecordServiceGrpc.getGetSizeMethod = getGetSizeMethod =
-              io.grpc.MethodDescriptor.<grpc.rpc.GetSizeArgs, grpc.rpc.GetSizeResult>newBuilder()
+              io.grpc.MethodDescriptor.<exercise4.grpc.rpc.GetSizeArgs, exercise4.grpc.rpc.GetSizeResult>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "getSize"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.rpc.GetSizeArgs.getDefaultInstance()))
+                  exercise4.grpc.rpc.GetSizeArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  grpc.rpc.GetSizeResult.getDefaultInstance()))
+                  exercise4.grpc.rpc.GetSizeResult.getDefaultInstance()))
               .setSchemaDescriptor(new RecordServiceMethodDescriptorSupplier("getSize"))
               .build();
         }
@@ -170,22 +170,22 @@ public final class RecordServiceGrpc {
 
     /**
      */
-    default void getRecord(grpc.rpc.GetRecordArgs request,
-        io.grpc.stub.StreamObserver<grpc.rpc.GetRecordResult> responseObserver) {
+    default void getRecord(exercise4.grpc.rpc.GetRecordArgs request,
+        io.grpc.stub.StreamObserver<exercise4.grpc.rpc.GetRecordResult> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetRecordMethod(), responseObserver);
     }
 
     /**
      */
-    default void addRecord(grpc.rpc.AddRecordArgs request,
-        io.grpc.stub.StreamObserver<grpc.rpc.AddRecordResult> responseObserver) {
+    default void addRecord(exercise4.grpc.rpc.AddRecordArgs request,
+        io.grpc.stub.StreamObserver<exercise4.grpc.rpc.AddRecordResult> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAddRecordMethod(), responseObserver);
     }
 
     /**
      */
-    default void getSize(grpc.rpc.GetSizeArgs request,
-        io.grpc.stub.StreamObserver<grpc.rpc.GetSizeResult> responseObserver) {
+    default void getSize(exercise4.grpc.rpc.GetSizeArgs request,
+        io.grpc.stub.StreamObserver<exercise4.grpc.rpc.GetSizeResult> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetSizeMethod(), responseObserver);
     }
   }
@@ -219,24 +219,24 @@ public final class RecordServiceGrpc {
 
     /**
      */
-    public void getRecord(grpc.rpc.GetRecordArgs request,
-        io.grpc.stub.StreamObserver<grpc.rpc.GetRecordResult> responseObserver) {
+    public void getRecord(exercise4.grpc.rpc.GetRecordArgs request,
+        io.grpc.stub.StreamObserver<exercise4.grpc.rpc.GetRecordResult> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetRecordMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void addRecord(grpc.rpc.AddRecordArgs request,
-        io.grpc.stub.StreamObserver<grpc.rpc.AddRecordResult> responseObserver) {
+    public void addRecord(exercise4.grpc.rpc.AddRecordArgs request,
+        io.grpc.stub.StreamObserver<exercise4.grpc.rpc.AddRecordResult> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getAddRecordMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getSize(grpc.rpc.GetSizeArgs request,
-        io.grpc.stub.StreamObserver<grpc.rpc.GetSizeResult> responseObserver) {
+    public void getSize(exercise4.grpc.rpc.GetSizeArgs request,
+        io.grpc.stub.StreamObserver<exercise4.grpc.rpc.GetSizeResult> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetSizeMethod(), getCallOptions()), request, responseObserver);
     }
@@ -260,21 +260,21 @@ public final class RecordServiceGrpc {
 
     /**
      */
-    public grpc.rpc.GetRecordResult getRecord(grpc.rpc.GetRecordArgs request) throws io.grpc.StatusException {
+    public exercise4.grpc.rpc.GetRecordResult getRecord(exercise4.grpc.rpc.GetRecordArgs request) throws io.grpc.StatusException {
       return io.grpc.stub.ClientCalls.blockingV2UnaryCall(
           getChannel(), getGetRecordMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public grpc.rpc.AddRecordResult addRecord(grpc.rpc.AddRecordArgs request) throws io.grpc.StatusException {
+    public exercise4.grpc.rpc.AddRecordResult addRecord(exercise4.grpc.rpc.AddRecordArgs request) throws io.grpc.StatusException {
       return io.grpc.stub.ClientCalls.blockingV2UnaryCall(
           getChannel(), getAddRecordMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public grpc.rpc.GetSizeResult getSize(grpc.rpc.GetSizeArgs request) throws io.grpc.StatusException {
+    public exercise4.grpc.rpc.GetSizeResult getSize(exercise4.grpc.rpc.GetSizeArgs request) throws io.grpc.StatusException {
       return io.grpc.stub.ClientCalls.blockingV2UnaryCall(
           getChannel(), getGetSizeMethod(), getCallOptions(), request);
     }
@@ -298,21 +298,21 @@ public final class RecordServiceGrpc {
 
     /**
      */
-    public grpc.rpc.GetRecordResult getRecord(grpc.rpc.GetRecordArgs request) {
+    public exercise4.grpc.rpc.GetRecordResult getRecord(exercise4.grpc.rpc.GetRecordArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetRecordMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public grpc.rpc.AddRecordResult addRecord(grpc.rpc.AddRecordArgs request) {
+    public exercise4.grpc.rpc.AddRecordResult addRecord(exercise4.grpc.rpc.AddRecordArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getAddRecordMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public grpc.rpc.GetSizeResult getSize(grpc.rpc.GetSizeArgs request) {
+    public exercise4.grpc.rpc.GetSizeResult getSize(exercise4.grpc.rpc.GetSizeArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetSizeMethod(), getCallOptions(), request);
     }
@@ -336,24 +336,24 @@ public final class RecordServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<grpc.rpc.GetRecordResult> getRecord(
-        grpc.rpc.GetRecordArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<exercise4.grpc.rpc.GetRecordResult> getRecord(
+        exercise4.grpc.rpc.GetRecordArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetRecordMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<grpc.rpc.AddRecordResult> addRecord(
-        grpc.rpc.AddRecordArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<exercise4.grpc.rpc.AddRecordResult> addRecord(
+        exercise4.grpc.rpc.AddRecordArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getAddRecordMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<grpc.rpc.GetSizeResult> getSize(
-        grpc.rpc.GetSizeArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<exercise4.grpc.rpc.GetSizeResult> getSize(
+        exercise4.grpc.rpc.GetSizeArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetSizeMethod(), getCallOptions()), request);
     }
@@ -381,16 +381,16 @@ public final class RecordServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_GET_RECORD:
-          serviceImpl.getRecord((grpc.rpc.GetRecordArgs) request,
-              (io.grpc.stub.StreamObserver<grpc.rpc.GetRecordResult>) responseObserver);
+          serviceImpl.getRecord((exercise4.grpc.rpc.GetRecordArgs) request,
+              (io.grpc.stub.StreamObserver<exercise4.grpc.rpc.GetRecordResult>) responseObserver);
           break;
         case METHODID_ADD_RECORD:
-          serviceImpl.addRecord((grpc.rpc.AddRecordArgs) request,
-              (io.grpc.stub.StreamObserver<grpc.rpc.AddRecordResult>) responseObserver);
+          serviceImpl.addRecord((exercise4.grpc.rpc.AddRecordArgs) request,
+              (io.grpc.stub.StreamObserver<exercise4.grpc.rpc.AddRecordResult>) responseObserver);
           break;
         case METHODID_GET_SIZE:
-          serviceImpl.getSize((grpc.rpc.GetSizeArgs) request,
-              (io.grpc.stub.StreamObserver<grpc.rpc.GetSizeResult>) responseObserver);
+          serviceImpl.getSize((exercise4.grpc.rpc.GetSizeArgs) request,
+              (io.grpc.stub.StreamObserver<exercise4.grpc.rpc.GetSizeResult>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -414,22 +414,22 @@ public final class RecordServiceGrpc {
           getGetRecordMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              grpc.rpc.GetRecordArgs,
-              grpc.rpc.GetRecordResult>(
+              exercise4.grpc.rpc.GetRecordArgs,
+              exercise4.grpc.rpc.GetRecordResult>(
                 service, METHODID_GET_RECORD)))
         .addMethod(
           getAddRecordMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              grpc.rpc.AddRecordArgs,
-              grpc.rpc.AddRecordResult>(
+              exercise4.grpc.rpc.AddRecordArgs,
+              exercise4.grpc.rpc.AddRecordResult>(
                 service, METHODID_ADD_RECORD)))
         .addMethod(
           getGetSizeMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              grpc.rpc.GetSizeArgs,
-              grpc.rpc.GetSizeResult>(
+              exercise4.grpc.rpc.GetSizeArgs,
+              exercise4.grpc.rpc.GetSizeResult>(
                 service, METHODID_GET_SIZE)))
         .build();
   }
@@ -440,7 +440,7 @@ public final class RecordServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return grpc.rpc.RpcRequest.getDescriptor();
+      return exercise4.grpc.rpc.RpcRequest.getDescriptor();
     }
 
     @java.lang.Override

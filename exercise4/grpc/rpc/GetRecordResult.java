@@ -3,7 +3,7 @@
 // source: RpcRequest.proto
 // Protobuf Java Version: 4.37.0-rc1
 
-package grpc.rpc;
+package exercise4.grpc.rpc;
 
 /**
  * Protobuf type {@code GetRecordResult}
@@ -33,20 +33,20 @@ private static final long serialVersionUID = 0L;
 
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return grpc.rpc.RpcRequest.internal_static_GetRecordResult_descriptor;
+    return exercise4.grpc.rpc.RpcRequest.internal_static_GetRecordResult_descriptor;
   }
 
   @java.lang.Override
   public com.google.protobuf.Descriptors.Descriptor getDescriptorForType() {
-    return grpc.rpc.RpcRequest.internal_static_GetRecordResult_descriptor;
+    return exercise4.grpc.rpc.RpcRequest.internal_static_GetRecordResult_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return grpc.rpc.RpcRequest.internal_static_GetRecordResult_fieldAccessorTable
+    return exercise4.grpc.rpc.RpcRequest.internal_static_GetRecordResult_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            grpc.rpc.GetRecordResult.class, grpc.rpc.GetRecordResult.Builder.class);
+            exercise4.grpc.rpc.GetRecordResult.class, exercise4.grpc.rpc.GetRecordResult.Builder.class);
   }
 
   private int bitField0_;
@@ -146,10 +146,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof grpc.rpc.GetRecordResult)) {
+    if (!(obj instanceof exercise4.grpc.rpc.GetRecordResult)) {
       return super.equals(obj);
     }
-    grpc.rpc.GetRecordResult other = (grpc.rpc.GetRecordResult) obj;
+    exercise4.grpc.rpc.GetRecordResult other = (exercise4.grpc.rpc.GetRecordResult) obj;
 
     if (hasRecord() != other.hasRecord()) return false;
     if (hasRecord()) {
@@ -176,44 +176,44 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static grpc.rpc.GetRecordResult parseFrom(
+  public static exercise4.grpc.rpc.GetRecordResult parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static grpc.rpc.GetRecordResult parseFrom(
+  public static exercise4.grpc.rpc.GetRecordResult parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static grpc.rpc.GetRecordResult parseFrom(
+  public static exercise4.grpc.rpc.GetRecordResult parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static grpc.rpc.GetRecordResult parseFrom(
+  public static exercise4.grpc.rpc.GetRecordResult parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static grpc.rpc.GetRecordResult parseFrom(byte[] data)
+  public static exercise4.grpc.rpc.GetRecordResult parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static grpc.rpc.GetRecordResult parseFrom(
+  public static exercise4.grpc.rpc.GetRecordResult parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static grpc.rpc.GetRecordResult parseFrom(java.io.InputStream input)
+  public static exercise4.grpc.rpc.GetRecordResult parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseWithIOException(PARSER, input);
   }
-  public static grpc.rpc.GetRecordResult parseFrom(
+  public static exercise4.grpc.rpc.GetRecordResult parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -221,26 +221,26 @@ private static final long serialVersionUID = 0L;
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
 
-  public static grpc.rpc.GetRecordResult parseDelimitedFrom(java.io.InputStream input)
+  public static exercise4.grpc.rpc.GetRecordResult parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseDelimitedWithIOException(PARSER, input);
   }
 
-  public static grpc.rpc.GetRecordResult parseDelimitedFrom(
+  public static exercise4.grpc.rpc.GetRecordResult parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static grpc.rpc.GetRecordResult parseFrom(
+  public static exercise4.grpc.rpc.GetRecordResult parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessage
         .parseWithIOException(PARSER, input);
   }
-  public static grpc.rpc.GetRecordResult parseFrom(
+  public static exercise4.grpc.rpc.GetRecordResult parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -253,7 +253,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(grpc.rpc.GetRecordResult prototype) {
+  public static Builder newBuilder(exercise4.grpc.rpc.GetRecordResult prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @java.lang.Override
@@ -274,21 +274,21 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessage.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:GetRecordResult)
-      grpc.rpc.GetRecordResultOrBuilder {
+      exercise4.grpc.rpc.GetRecordResultOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return grpc.rpc.RpcRequest.internal_static_GetRecordResult_descriptor;
+      return exercise4.grpc.rpc.RpcRequest.internal_static_GetRecordResult_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return grpc.rpc.RpcRequest.internal_static_GetRecordResult_fieldAccessorTable
+      return exercise4.grpc.rpc.RpcRequest.internal_static_GetRecordResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              grpc.rpc.GetRecordResult.class, grpc.rpc.GetRecordResult.Builder.class);
+              exercise4.grpc.rpc.GetRecordResult.class, exercise4.grpc.rpc.GetRecordResult.Builder.class);
     }
 
-    // Construct using grpc.rpc.GetRecordResult.newBuilder()
+    // Construct using exercise4.grpc.rpc.GetRecordResult.newBuilder()
     private Builder() {
 
     }
@@ -309,17 +309,17 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return grpc.rpc.RpcRequest.internal_static_GetRecordResult_descriptor;
+      return exercise4.grpc.rpc.RpcRequest.internal_static_GetRecordResult_descriptor;
     }
 
     @java.lang.Override
-    public grpc.rpc.GetRecordResult getDefaultInstanceForType() {
-      return grpc.rpc.GetRecordResult.getDefaultInstance();
+    public exercise4.grpc.rpc.GetRecordResult getDefaultInstanceForType() {
+      return exercise4.grpc.rpc.GetRecordResult.getDefaultInstance();
     }
 
     @java.lang.Override
-    public grpc.rpc.GetRecordResult build() {
-      grpc.rpc.GetRecordResult result = buildPartial();
+    public exercise4.grpc.rpc.GetRecordResult build() {
+      exercise4.grpc.rpc.GetRecordResult result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -327,14 +327,14 @@ private static final long serialVersionUID = 0L;
     }
 
     @java.lang.Override
-    public grpc.rpc.GetRecordResult buildPartial() {
-      grpc.rpc.GetRecordResult result = new grpc.rpc.GetRecordResult(this);
+    public exercise4.grpc.rpc.GetRecordResult buildPartial() {
+      exercise4.grpc.rpc.GetRecordResult result = new exercise4.grpc.rpc.GetRecordResult(this);
       if (bitField0_ != 0) { buildPartial_autosplit_0(result); }
       onBuilt();
       return result;
     }
 
-    private void buildPartial_autosplit_0(grpc.rpc.GetRecordResult result) {
+    private void buildPartial_autosplit_0(exercise4.grpc.rpc.GetRecordResult result) {
       int from_bitField0_ = bitField0_;
       int to_bitField0_ = 0;
       if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -346,16 +346,16 @@ private static final long serialVersionUID = 0L;
 
     @java.lang.Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof grpc.rpc.GetRecordResult) {
-        return mergeFrom((grpc.rpc.GetRecordResult)other);
+      if (other instanceof exercise4.grpc.rpc.GetRecordResult) {
+        return mergeFrom((exercise4.grpc.rpc.GetRecordResult)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(grpc.rpc.GetRecordResult other) {
-      if (other == grpc.rpc.GetRecordResult.getDefaultInstance()) return this;
+    public Builder mergeFrom(exercise4.grpc.rpc.GetRecordResult other) {
+      if (other == exercise4.grpc.rpc.GetRecordResult.getDefaultInstance()) return this;
       if (other.hasRecord()) {
         record_ = other.record_;
         bitField0_ |= 0x00000001;
@@ -494,12 +494,12 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:GetRecordResult)
-  private static final grpc.rpc.GetRecordResult DEFAULT_INSTANCE;
+  private static final exercise4.grpc.rpc.GetRecordResult DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new grpc.rpc.GetRecordResult();
+    DEFAULT_INSTANCE = new exercise4.grpc.rpc.GetRecordResult();
   }
 
-  public static grpc.rpc.GetRecordResult getDefaultInstance() {
+  public static exercise4.grpc.rpc.GetRecordResult getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -530,7 +530,7 @@ private static final long serialVersionUID = 0L;
   }
 
   @java.lang.Override
-  public grpc.rpc.GetRecordResult getDefaultInstanceForType() {
+  public exercise4.grpc.rpc.GetRecordResult getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 
