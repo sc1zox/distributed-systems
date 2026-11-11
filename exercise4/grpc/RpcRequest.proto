@@ -1,5 +1,5 @@
 syntax = "proto2";
-option java_package = "grpc.rpc";
+option java_package = "exercise4.grpc.rpc";
 option java_multiple_files = true;
 
 message GetRecordArgs {

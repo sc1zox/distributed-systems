@@ -1,4 +1,4 @@
-package grpc;
+package exercise4.grpc;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -9,10 +9,10 @@ import java.util.concurrent.TimeUnit;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.StatusRuntimeException;
-import grpc.rpc.AddRecordArgs;
-import grpc.rpc.GetRecordArgs;
-import grpc.rpc.GetSizeArgs;
-import grpc.rpc.RecordServiceGrpc;
+import exercise4.grpc.rpc.AddRecordArgs;
+import exercise4.grpc.rpc.GetRecordArgs;
+import exercise4.grpc.rpc.GetSizeArgs;
+import exercise4.grpc.rpc.RecordServiceGrpc;
 
 public class SocketClient {
 
@@ -42,16 +42,16 @@ public class SocketClient {
             RecordServiceGrpc.RecordServiceBlockingStub stub = RecordServiceGrpc.newBlockingStub(channel);
 
             for (Map.Entry<Integer, String> entry : RECORDS_TO_ADD.entrySet()) {
-                grpc.rpc.AddRecordArgs addRecArg = AddRecordArgs.newBuilder().setIndex(entry.getKey())
+                exercise4.grpc.rpc.AddRecordArgs addRecArg = AddRecordArgs.newBuilder().setIndex(entry.getKey())
                         .setRecord(entry.getValue()).build();
-                grpc.rpc.AddRecordResult result = stub.addRecord(addRecArg);
+                exercise4.grpc.rpc.AddRecordResult result = stub.addRecord(addRecArg);
                 System.out.println(result.toString());
             }
             for (int index : new int[] { 4103, 4107 }) {
-                grpc.rpc.GetRecordArgs getRecordArg = GetRecordArgs.newBuilder().setIndex(index)
+                exercise4.grpc.rpc.GetRecordArgs getRecordArg = GetRecordArgs.newBuilder().setIndex(index)
                         .build();
                 try {
-                    grpc.rpc.GetRecordResult result = stub.getRecord(getRecordArg);
+                    exercise4.grpc.rpc.GetRecordResult result = stub.getRecord(getRecordArg);
                     System.out.println(result.toString());
                 } catch (StatusRuntimeException e) {
                     System.out.println(e.getStatus().getCode());
@@ -60,8 +60,8 @@ public class SocketClient {
 
             // Get Size Query
             {
-                grpc.rpc.GetSizeArgs getSizeArgs = GetSizeArgs.newBuilder().build();
-                grpc.rpc.GetSizeResult result = stub.getSize(getSizeArgs);
+                exercise4.grpc.rpc.GetSizeArgs getSizeArgs = GetSizeArgs.newBuilder().build();
+                exercise4.grpc.rpc.GetSizeResult result = stub.getSize(getSizeArgs);
                 System.out.println(result.toString());
             }
 

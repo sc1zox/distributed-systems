@@ -1,4 +1,4 @@
-package grpc;
+package exercise4.grpc;
 
 import java.io.IOException;
 

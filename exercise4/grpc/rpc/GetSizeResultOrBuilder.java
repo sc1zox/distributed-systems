@@ -3,7 +3,7 @@
 // source: RpcRequest.proto
 // Protobuf Java Version: 4.37.0-rc1
 
-package grpc.rpc;
+package exercise4.grpc.rpc;
 
 @com.google.protobuf.Generated
 public interface GetSizeResultOrBuilder extends
