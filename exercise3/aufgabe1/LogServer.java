@@ -17,15 +17,16 @@ public class LogServer {
         // true = append to the file instead of overwriting it
         logFile = new FileWriter("server.log", true);
 
-        ServerSocket serverSocket = new ServerSocket(port);
-        System.out.println("Log server started on port " + port);
+        try (ServerSocket serverSocket = new ServerSocket(port)) {
+            System.out.println("Log server started on port " + port);
 
-        while (true) {
-            Socket socket = serverSocket.accept();
-            System.out.println("New connection from: " + socket.getInetAddress());
+            while (true) {
+                Socket socket = serverSocket.accept();
+                System.out.println("New connection from: " + socket.getInetAddress());
 
-            // one new thread for each client
-            new Thread(() -> handleClient(socket)).start();
+                // one new thread for each client
+                new Thread(() -> handleClient(socket)).start();
+            }
         }
     }
 
