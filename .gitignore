@@ -150,3 +150,6 @@ dist/
 # VS Code
 .vscode/
 
+
+# Von exercise6.DataBaseServer geschriebene Stub-Datei
+registryMock
